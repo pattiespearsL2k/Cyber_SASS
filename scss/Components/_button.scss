@@ -1,0 +1,18 @@
+// .btnPhone-white {
+//     @include styleBtn(transparent, $pd-3 + 0.5, $pd-4,2px solid $color-blue-2);
+//     @include styleText($color-blue-2, $fs-1, $fw-2);
+//     border-radius: 8px;
+//     transition: $ts;
+//     &:hover {
+//         @include styleHoverBtn($color-blue-2,$color-white-3, 2px solid $color-blue-2)
+//     }
+// }
+// .btnPhone-blue {
+//     @include styleBtn(linear-gradient(
+//         120deg, #60a4f4, #2a73dd), $pd-3 + 2.5, $pd-4 + 2,2px solid $color-blue-2);
+//     @include styleText($color-white-3, $fs-1, $fw-2);
+//     border-radius: 8px;
+//     outline: none;
+//     border: none;
+
+// }

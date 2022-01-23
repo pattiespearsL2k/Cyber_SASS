@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabula</title>
+    <!-- boostrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- font -->
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- main -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="container demo">
+        <div class="text-left">
+            <button type="button" class="btn btn-demo" data-toggle="modal" data-target="#myModal">
+                <span class="navbar-toggler-icon">
+                    <i class="fas fa-bars"></i>
+                </span>
+            </button>
+        </div>
+        <div class="modal left fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <nav class="container navbar navbar-expand-lg">
+                            <a id="brand" class="navbar-brand" href="#">
+                                <img src="./img/crest.png" alt="logo">
+                            </a>
+                            <div class="headerTabula">
+                                <div class="" id="navbarTabula">
+                                    <ul class="navbar-nav ml-auto">
+                                        <li class="nav-item ">
+                                            <a class="nav-link active" href="#">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">About</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Courses</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Blog</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Shop</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Elements</a>
+                                        </li>
+                                    </ul>
+                                    <div class="headerTabula__contact">
+                                        <a class="header__phone" href="">
+                                            <div class="header__number">
+                                                <i class="fas fa-phone"></i>
+                                                (+1)555 234-8765
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="headerTabula__social">
+                                        <a href=""><i class="fab fa-twitter"></i></a>
+                                        <a href=""><i class="fab fa-facebook"></i></a>
+                                        <a href=""><i class="fab fa-youtube"></i></a>
+                                        <a href=""><i class="fab fa-instagram"></i></a>
+                                    </div>
+    
+                                </div>
+                            </div>
+                            
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header id="header" class="headerTabula">
+        <nav class="container navbar navbar-expand-lg">
+            <a id="brand" class="navbar-brand" href="#">
+                <img src="./img/crest.png" alt="logo">
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarTabula">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Elements</a>
+                    </li>
+                </ul>
+                <div class="headerTabula__contact">
+                    <a class="header__phone" href="">
+                        <div class="header__number">
+                            <i class="fas fa-phone"></i>
+                            (+1)555 234-8765
+                        </div>
+                    </a>
+                </div>
+                <div class="headerTabula__social">
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-youtube"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <section class="about">
+        <div class="container">
+            <div class="about__top">
+                <img src="./img/yellow_top_wave_01.png" alt="">
+            </div>
+            <div class="row d-flex align-items-center">
+                <div class="col-md-12 col-lg-6">
+                    <h3>ABOUT US</h3>
+                    <p>The language teaching experts</p>
+                </div>
+                <div class="col-md-12 col-lg-6">
+                    <div class="about__img">
+                        <img src="./img/hero_team.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="info">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="info__content">
+                        <div class="info__img">
+                            <img src="./img/teacher_1.jpg" alt="">
+                        </div>
+                        <div class="info__detail">
+                            <h4>ITALIAN</h4>
+                            <h2>July Roberts</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="info__content">
+                        <div class="info__img">
+                            <img src="./img/teacher_2.jpg" alt="">
+                        </div>
+                        <div class="info__detail">
+                            <h4>FRENCH</h4>
+                            <h2>Jon Stone</h2>
+                            <p>Nanotechnology immersion along the information.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="info__content">
+                        <div class="info__img">
+                            <img src="./img/teacher_3.jpg" alt="">
+                        </div>
+                        <div class="info__detail">
+                            <h4>JAPANESE</h4>
+                            <h2>Emma Stone</h2>
+                            <p>Bring to the table win-win survival strategies to ensure.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="info__content">
+                        <div class="info__img">
+                            <img src="./img/teacher_4.jpg" alt="">
+                        </div>
+                        <div class="info__detail">
+                            <h4>CHINESE</h4>
+                            <h2>Mark Lee</h2>
+                            <p>Proactive domination. At the end of the day, going forward.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="info__content">
+                        <div class="info__img">
+                            <img src="./img/teacher_5.jpg" alt="">
+                        </div>
+                        <div class="info__detail">
+                            <h4>RUSSIAN</h4>
+                            <h2>John Doe</h2>
+                            <p>A new normal that has evolved from generation X.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="info__content">
+                        <div class="info__img">
+                            <img src="./img/teacher_6.jpg" alt="">
+                        </div>
+                        <div class="info__detail">
+                            <h4>SWEDEN</h4>
+                            <h2>Jane Smith</h2>
+                            <p>Heading towards a streamlined cloud solution.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="info__content">
+                        <div class="info__img">
+                            <img src="./img/teacher_7.jpg" alt="">
+                        </div>
+                        <div class="info__detail">
+                            <h4>SPANISH</h4>
+                            <h2>Hanna Alverez</h2>
+                            <p>Content in real-time will have multiple touchpoints.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="info__content">
+                        <div class="info__img">
+                            <img src="./img/teacher_8.jpg" alt="">
+                        </div>
+                        <div class="info__detail">
+                            <h4>ITALIAN</h4>
+                            <h2>July Roberts</h2>
+                            <p>Capitalize on low hanging fruit to identify a ballpark.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="info__imgbottom">
+            <img src="./img/Wave_White_bottom_right_shape_01.png" alt="">
+        </div>
+    </section>
+    <section class="find">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-7 col-xl-7">
+                    <div class="find__img">
+                        <img src="./img/conatct_inner.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-5 col-xl-5">
+                    <div class="find__form">
+                        <h1>Find Your Course</h1>
+                        <form action="">
+                            <div class="form-inner">
+                                <div class="form-group--wrap">
+                                    <div class="form-group ">
+                                        <i class="fa fa-user"></i>
+                                        <input type="text" class="form-control input-margin" placeholder="Name "
+                                            id="Name">
+                                    </div>
+                                    <div class="form-group ">
+                                        <i class="fa fa-envelope"></i>
+                                        <input type="email" class="form-control" placeholder="E-mail" id="email">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <i class="fa fa-graduation-cap"></i>
+                                    <select class="form-control" name="" id="">
+                                        <option value="">English</option>
+                                        <option value="">French</option>
+                                        <option value="">Spanish</option>
+                                        <option value="">German</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control form-control--area " size="40"
+                                        placeholder="Message"></textarea>
+                                </div>
+                                <div class="find__button">
+                                    <input type="submit" value="SEND">
+
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="find__imgtop">
+            <img src="./img/accent_bottom_wave_01.png" alt="">
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="footer__item">
+                        <h2>Contact us</h2>
+                        <ul class="footer__contact">
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                Franklin St, Greenpoint Ave
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                +2342 5446 67
+                            </li>
+                            <li>
+                                <i class="far fa-bell"></i>
+                                Monday - Friday: 8 AM - 5 PM
+                            </li>
+                        </ul>
+                        <div class="footer__socials">
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="footer__item ">
+                        <h2>Quick Links</h2>
+                        <ul class="footer__list">
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Courses</a>
+                            </li>
+                            <li>
+                                <a href="#">Schedule</a>
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="footer__item footer__space">
+                        <h2>About</h2>
+                        <ul class="footer__list">
+                            <li>
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Events</a>
+                            </li>
+                            <li>
+                                <a href="#">Get Quote</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="footer__item footer__space">
+                        <h2>Newsletter</h2>
+                        <div class="footer__input">
+                            <input type="text" placeholder="Your email">
+                        </div>
+                        <div class="footer__btn">
+                            <input type="submit" value="SUBSCRIBE">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function () {
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 300) {
+                    document.getElementById('header').classList.add('fixed-top');
+                    navbar_height = document.querySelector('.headerTabula').offsetHeight;
+                    document.body.style.paddingTop = navbar_height + 'px';
+                    document.getElementById("header").style.background = "#fff";
+                    document.getElementById("header").style.padding = "6px 0";
+                    document.getElementById("brand").style.display = "none";
+                } else {
+                    document.getElementById('header').classList.remove('fixed-top');
+                    document.body.style.paddingTop = '0';
+                    document.getElementById("brand").style.display = "block";
+                    document.getElementsByClassName("about__top").style.height = "100%";
+                }
+            });
+        }); 
+    </script>
+</body>
+
+</html>

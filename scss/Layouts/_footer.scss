@@ -1,0 +1,103 @@
+.footer {
+    background-image: url(../../img/footer_background.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: $pd-9;
+    a {
+        text-decoration: none;
+    }
+    ul {
+        font-family: $ff;
+    }
+    .footer__item {
+        margin-bottom: $mg-6;
+        h2 {
+            @include styleText($color-white-3, $fs-2, $fw-2);
+            margin-bottom: $mg-5;
+        }
+        li {
+            list-style: none;
+            @include styleText($color-white-3, $fs-5, $fw-1);
+            padding: $mg-4 0;
+        }
+        .footer__contact {
+            i {
+                margin-right: $mg-7;
+            }
+        }
+        .footer__list {
+            li {
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            }
+            a {
+                @include styleText($color-white-3, $fs-5, $fw-1);
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+
+        .footer__socials {
+            a {
+                color:$color-white-3;
+                font-size: $fs-3;
+                padding-right: $pd-8;
+                display: inline-block;
+                i {
+                    transition: $ts-1;
+                    &:hover {
+                        color: $color-black-1;
+                    }
+                }
+            }
+        }
+
+        .footer__input {
+            padding-top: $pd-11;
+            input {
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                border-radius: 50px;
+                height: 50px;
+                text-align: center;
+                background: transparent;
+                outline: none;
+                width: 100%;
+                font-size: 13px;
+                color: $color-white-3;
+                &::placeholder {
+                    color: $color-white-3;
+                }
+            }
+        }
+        .footer__btn {
+            padding-top: 10px;
+            input {
+                width: 100%;
+                background-color: $color-pink-1;
+                box-shadow: 0 0 0 3em $color-white-3 inset;
+                padding: $pd-8 $pd-4;
+                color: $color-black-1;
+                border: none;
+                outline: none;
+                border-radius: 50px;
+                font-weight: 600;
+                transition: $ts-1;
+                &:hover {
+                    box-shadow: 0 0 0 1px $color-white-3 inset;
+                    color: $color-white-3;
+                }
+            }
+        }
+    }
+    .footer__space {
+        padding-left: $pd-10;
+    }
+}
+
+@media (max-width: 992px) {
+    .footer {
+        .footer__space {
+            padding: 0;
+        }
+    }
+}

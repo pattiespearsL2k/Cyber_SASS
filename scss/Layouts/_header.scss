@@ -1,0 +1,168 @@
+.headerTabula {
+    font-family: "Montserrat", sans-serif;
+    .nav-item {
+        position: relative;
+        .nav-link {
+            transition: all 0.5s linear;
+            @include styleText($color-black-1, $fs-1, $fw-2);
+            &:hover {
+                color: $color-pink-1;
+                &::before {
+                    display: block;
+                    transform: scale(1.3);
+                }
+            }
+            &::before {
+                @include styleNavbar($ct, $ps, $l-2, $t-2, $color-pink-1, $bd-r-3, $none);
+                @include styleSize($w-3, $h-3);
+            }
+        }
+        .active {
+            &::before {
+                @include styleNavbar($ct, $ps, $l-2, $t-2, $color-pink-1, $bd-r-3, $block);
+                @include styleSize($w-3, $h-3);
+            }
+        }
+    }
+
+    .navbar-brand {
+        padding: $pd-0;
+        img {
+            @include styleSize($w-1, $h-1);
+        }
+    }
+    li {
+        padding-right: $pd-1;
+    }
+    .navbar-toggler-icon {
+        color: $color-blue-1;
+    }
+    .headerTabula__contact {
+        @include styleBtn($color-white-3, $pd-3, $pd-5, $none, $bd-r-4, $none, $fw-2, $ts-1);
+        box-shadow: 0 0 0 3em #b61984 inset;
+        a {
+            color: $color-white-3;
+        }
+        &:hover {
+            box-shadow: 0 0 0 1px #b61984 inset;
+            color: #b61984;
+        }
+        &:hover > a {
+            color: $color-pink-1;
+            text-decoration: none;
+        }
+    }
+
+    .headerTabula__social {
+        a {
+            @include styleText($color-black-1, $fs-5, $fw-1);
+            padding-left: $pd-3;
+            &:hover {
+                color: $color-pink-1;
+            }
+        }
+    }
+}
+
+.navbar {
+    padding: 0;
+}
+
+.modal.left .modal-dialog,
+.modal.right .modal-dialog {
+    position: fixed;
+    margin: auto;
+    width: 320px;
+    height: 100%;
+    transform: translate3d(20%, 0, 0);
+}
+
+.modal.left .modal-content,
+.modal.right .modal-content {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.modal.left .modal-body,
+.modal.right .modal-body {
+    // left:-100px;
+    padding: 15px 15px 80px;
+}
+
+/*Left*/
+.modal.left.fade .modal-dialog {
+    left: -64px;
+    transition: opacity 0.3s linear, left 0.3s ease-out;
+}
+
+.modal.left.fade.in .modal-dialog {
+    left: 0;
+}
+
+.modal-content {
+    border-radius: 0;
+    border: none;
+}
+
+.modal-header {
+    border-bottom-color: #eeeeee;
+    background-color: #fafafa;
+}
+
+.btn-demo {
+    margin: 15px;
+    padding: 10px 15px;
+    border-radius: 0;
+    font-size: 16px;
+    background-color: #ffffff;
+}
+
+.btn-demo:focus {
+    outline: 0;
+}
+
+.demo-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    background-color: #212121;
+    text-align: center;
+}
+
+.demo-footer > a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+}
+
+@include responsive("large") {
+    .headerPhone {
+        .nav-item {
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 1259px) {
+    .container {
+        width: 100%;
+        max-width: none;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .demo {
+        display: none;
+    }
+   
+}
+
+@media (max-width: 992px) {
+    .demo {
+        display: block;
+    }
+
+   
+}
+

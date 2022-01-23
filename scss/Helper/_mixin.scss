@@ -1,0 +1,56 @@
+@mixin styleText($color, $fs, $fw) {
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}
+@mixin styleBtn($bg, $pd-y, $pd-x, $border, $bdr,$ol, $fw,$ts) {
+    background: $bg;
+    padding: $pd-y $pd-x;
+    border: $border;
+    border-radius: $bdr;
+    outline: $ol;
+    font-weight: $fw;
+    transition:$ts;
+    
+
+}
+@mixin styleHoverBtn($bg, $color, $boder) {
+    background: $bg;
+    color: $color;
+    border: $boder;
+}
+
+@mixin stylePosition($ps, $top, $right, $bottom, $left) {
+    position: $ps;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin responsive($screen) {
+    @if (map-has-key($map: $breakpoints, $key: $screen)) {
+        $value: map-get(
+            $map: $breakpoints,
+            $key: $screen,
+        );
+        @media screen and (max-width: $value) {
+            @content;
+        }
+    }
+}
+
+@mixin styleSize($wi, $he) {
+    width: $wi;
+    height: $he;
+}
+
+@mixin styleNavbar($con, $ps, $l, $t, $bc, $br, $dis) {
+    content: $con;
+    position: $ps;
+    left: $l;
+    top: $t;
+    background-color: $bc;
+    border-radius: $br;
+    display: $dis;
+}
